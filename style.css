@@ -1,0 +1,103 @@
+:root {
+  --primaryColor: #123c69;
+  --secondaryColor: #2170c4;
+  --bgColor: #f5f5f5;
+  --textColor: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.grid {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card {
+  background-color: var(--bgColor);
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  height: 100px;
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+.navbar-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container h1 {
+  font-weight: 300;
+}
+
+.main-section {
+  margin-top: 20px;
+}
+
+.main-section .container .question {
+  display: inline-block;
+}
+
+.main-section .container .question .option {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-section .container .question h4 {
+  font-weight: 600;
+}
+
+.main-section .container input[type=submit] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primaryColor);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  transition: 0.2s;
+}
+.main-section .container input[type=submit]:hover {
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+}
+.main-section .container input[type=submit]:active {
+  outline: none;
+}
+.main-section .container input[type=submit]:focus {
+  outline: none;
+}
