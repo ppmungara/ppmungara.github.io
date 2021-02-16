@@ -76,6 +76,8 @@ a {
   align-items: center;
   gap: 20px;
   margin: 5px;
+  flex-wrap: wrap;
+  flex: none;
 }
 
 .main-section .container .question h4 {

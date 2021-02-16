@@ -11,8 +11,9 @@ function displayAnswer(button) {
      }
   }
   if (document.getElementById(correct_answer).checked) {
-    document.getElementById(result_spans[answers[question_number]]).style.color = 'limegreen';
-    document.getElementById(result_spans[answers[question_number]]).innerHTML = 'Correct!';
+    //document.getElementById(result_spans[answers[question_number]]).style.color = 'limegreen';
+    //document.getElementById(result_spans[answers[question_number]]).innerHTML = 'Correct!';
+    document.getElementById("question-card-"+question_number).style.background = "#b1eb86";
     }
 
   else {
@@ -20,8 +21,9 @@ function displayAnswer(button) {
     for (i in incorrect_answers) {
       var option_checked = parseInt(incorrect_answers[i].split("-")[2]);
       if (document.getElementById(incorrect_answers[i]).checked){
-        document.getElementById(result_spans[option_checked]).style.color = 'red';
-        document.getElementById(result_spans[option_checked]).innerHTML = 'Incorrect!';
+        //document.getElementById(result_spans[option_checked]).style.color = 'red';
+        //document.getElementById(result_spans[option_checked]).innerHTML = 'Incorrect!';
+        document.getElementById("question-card-"+question_number).style.background = "#f09081";
       }
     }
   }
