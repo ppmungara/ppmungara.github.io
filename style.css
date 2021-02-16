@@ -75,7 +75,8 @@ a {
   align-items: center;
   gap: 20px;
   margin: 5px;
-  flex: auto;
+  flex: none;
+  flex-wrap: wrap;
 }
 
 .main-section .container .question h4 {
